@@ -17,13 +17,14 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </div>
 
         <!-- Desktop Navigation centered -->
-        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6">
-            <a href="index.php" class="<?php echo ($current_page == 'index.php') ? 'text-red-600 underline font-semibold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-semibold'; ?>">Home</a>
-            <a href="services.php" class="<?php echo ($current_page == 'services.php') ? 'text-red-600 underline font-semibold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-semibold'; ?>">Services</a>
-            <a href="about.php" class="<?php echo ($current_page == 'about.php') ? 'text-red-600 underline font-semibold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-semibold'; ?>">About Us</a>
-            <a href="gallery.php" class="<?php echo ($current_page == 'gallery.php') ? 'text-red-600 underline font-semibold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-semibold'; ?>">Picture Gallery</a>
-            <a href="contact.php" class="<?php echo ($current_page == 'contact.php') ? 'text-red-600 underline font-semibold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-semibold'; ?>">Contact Us</a>
-        </div>
+        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 text-[18px]">
+    <a href="index.php" class="<?php echo ($current_page == 'index.php') ? 'text-red-600 underline font-bold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-bold'; ?>">Home</a>
+    <a href="about.php" class="<?php echo ($current_page == 'about.php') ? 'text-red-600 underline font-bold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-bold'; ?>">About Us</a>
+    <a href="services.php" class="<?php echo ($current_page == 'services.php') ? 'text-red-600 underline font-bold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-bold'; ?>">Services</a> 
+    <a href="gallery.php" class="<?php echo ($current_page == 'gallery.php') ? 'text-red-600 underline font-bold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-bold'; ?>">Picture Gallery</a>
+    <a href="contact.php" class="<?php echo ($current_page == 'contact.php') ? 'text-red-600 underline font-bold' : 'text-[#4F2D7F] hover:underline hover:text-red-600 font-bold'; ?>">Contact Us</a>
+</div>
+
 
         <!-- Hamburger Button -->
         <button id="menu-btn" class="block md:hidden text-[#4F2D7F] text-3xl">

@@ -7,6 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
+    <style>
+    .carousel-track {
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
 
 </head>
 <body class="bg-white">
@@ -71,63 +76,124 @@
 
     <!--------------------  slider-- -->
 
-    <div class="relative w-full h-[70vh] overflow-hidden">
+   <div class="relative w-full h-[70vh] overflow-hidden">
 
-        <!-- Four Images in Each Quarter with Text at Bottom Left -->
-        <div class="absolute inset-0 flex">
-    
-            <!-- Integrity -->
-            <div class="group w-1/4 h-full relative">
-                <img src="Images/integrity.png" class="w-full h-full object-cover">
-                <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
-                    <span class="text-base font-semibold">Integrity</span>
-                    <span class="text-xs">→</span>
-                </div>
-            </div>
-    
-            <!-- Excellence -->
-            <div class="group w-1/4 h-full relative">
-                <img src="Images/excellence.png" class="w-full h-full object-cover">
-                <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
-                    <span class="text-base font-semibold">Excellence</span>
-                    <span class="text-xs">→</span>
-                </div>
-            </div>
-    
-            <!-- Client Focus -->
-            <div class="group w-1/4 h-full relative">
-                <img src="Images/clientfocus.png" class="w-full h-full object-cover">
-                <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
-                    <span class="text-base font-semibold">Client Focus</span>
-                    <span class="text-xs">→</span>
-                </div>
-            </div>
-    
-            <!-- Accountability -->
-            <div class="group w-1/4 h-full relative">
-                <img src="Images/accountablity.png" class="w-full h-full object-cover">
-                <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
-                    <span class="text-base font-semibold">Accountability</span>
-                    <span class="text-xs">→</span>
-                </div>
-            </div>
-    
+  <!-- Carousel Wrapper -->
+  <div id="carousel" class="flex h-full carousel-track">
+
+    <!-- Slide 1 -->
+    <div class="flex w-full h-full flex-shrink-0">
+
+      <!-- Integrity -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/integrity.png" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Integrity</span>
+          <span class="text-xs">→</span>
         </div>
-    
-        <!-- Vertical Dividing Lines -->
-        <div class="absolute inset-y-0 left-1/4 w-[3px] bg-black"></div>
-        <div class="absolute inset-y-0 left-1/2 w-[3px] bg-black"></div>
-        <div class="absolute inset-y-0 left-3/4 w-[3px] bg-black"></div>
-    
-        <!-- Navigation Arrows -->
-        <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:scale-110 transition">
-            &#10094;
-        </button>
-        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:scale-110 transition">
-            &#10095;
-        </button>
-    
+      </div>
+
+      <!-- Excellence -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/excellence.png" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Excellence</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+      <!-- Client Focus -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/clientfocus.png" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Client Focus</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+      <!-- Accountability -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/accountablity.png" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Accountability</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Slide 2 -->
+    <div class="flex w-full h-full flex-shrink-0">
+
+      <!-- Collaboration -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/collaboration.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Collaboration</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+      <!-- Respect -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/respect.jpeg" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Respect</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+      <!-- Community Engagement -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/communityengagement.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Community Engagement</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+      <!-- Innovation -->
+      <div class="group w-1/4 h-full relative">
+        <img src="Images/innovation.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 flex items-center space-x-2 text-white">
+          <span class="text-base font-semibold">Innovation</span>
+          <span class="text-xs">→</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-purple-800 text-4xl hover:scale-110 transition">
+    &#10094;
+  </button>
+  <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-purple-800 text-4xl hover:scale-110 transition">
+    &#10095;
+  </button>
+
+</div>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const totalSlides = 2;
+  let currentSlide = 0;
+
+  function updateSlidePosition() {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlidePosition();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  }
+</script>
 
     <!--------------mission visionnnnnnnnnn-->
 

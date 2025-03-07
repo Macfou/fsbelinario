@@ -6,95 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | FS.Belinario</title>
     <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body class="bg-white">
+<body class="bg-white home-page">
 
 <?php include 'navbar.php'; ?>
 
+<!-------------image slider---------------->
 
-
-    <!------------------------Slide Show--------------------->
-
-    <div class="relative w-full h-[70vh] overflow-hidden">
-
-        <!-- Slideshow Container -->
-        <div class="relative w-full h-full">
-            <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out slide">
-                <img src="https://fsbelinarioaccounting.ph//assets/images/banner_new1.jpg" class="w-full h-full object-cover">
+<div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="Images/integritycv.jpeg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Integrity</div>
+                    
+                </div>
             </div>
-            <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out slide">
-                <img src="https://fsbelinarioaccounting.ph//assets/images/banner_new3.jpg" class="w-full h-full object-cover">
+            <div class="item">
+                <img src="Images/expertisecv.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Excellence</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/clientfocuscv.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Client Focus</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/accountabilitycv.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Accountability</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/collaboration.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Collaboration</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/respect.jpeg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Respect</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/communityengagement.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Community Engagement</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/innovation.jpg">
+                <div class="content">
+                    <div class="author">Core Values</div>
+                    <div class="title">Innovation</div>
+                </div>
             </div>
         </div>
-    
-        <!-- Vertical Dividing Lines -->
-        <div class="absolute inset-y-0 left-1/4 w-[3px] bg-black"></div>
-        <div class="absolute inset-y-0 left-1/2 w-[3px] bg-black"></div>
-        <div class="absolute inset-y-0 left-3/4 w-[3px] bg-black"></div>
-    
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start justify-center text-left px-16">
-            <h1 class="text-white text-4xl md:text-6xl font-bold">GET STARTED WORK WITH US</h1>
-            <button class="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-lg hover:bg-purple-700">
-                GET STARTED
-            </button>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Images/integritycv.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Integrity
+                    </div>
+                    <div class="description">
+                        Core Values
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/expertisecv.jpg">
+                <div class="content">
+                    <div class="title">
+                        Excellence
+                    </div>
+                    <div class="description">
+                        Core Values
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/clientfocuscv.jpg">
+                <div class="content">
+                    <div class="title">
+                        Client Focus
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/accountabilitycv.jpg">
+                <div class="content">
+                    <div class="title">
+                        Accountability
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/collaboration.jpg">
+                <div class="content">
+                    <div class="title">
+                        Collaboration
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/respect.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Respect
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+             </div>
+                <div class="item">
+                <img src="Images/communityengagement.jpg">
+                <div class="content">
+                    <div class="title">
+                        Community Engagement
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+           </div>
+                <div class="item">
+                <img src="Images/innovation.jpg">
+                <div class="content">
+                    <div class="title">
+                        Innovation
+                    </div>
+                    <div class="description">
+                       Core Values
+                    </div>
+                </div>
+            </div>
+
         </div>
-    
-        <!-- Navigation Arrows -->
-        <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:scale-110 transition">
-            &#10094;
-        </button>
-        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:scale-110 transition">
-            &#10095;
-        </button>
-        
-    
-        <!-- Core Values Section -->
-        <div class="absolute bottom-4 left-0 w-full flex">
-    
-            <!-- Integrity -->
-            <div class="w-1/4 py-2 px-2 flex flex-col items-center justify-center text-white">
-                <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
-                    👤
-                </div>
-                <p class="mt-1 text-base font-semibold">Integrity</p>
-                <span class="text-xs">→</span>
-            </div>
-    
-            <!-- Excellence -->
-            <div class="w-1/4 py-2 px-2 flex flex-col items-center justify-center text-white">
-                <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
-                    ⭐
-                </div>
-                <p class="mt-1 text-base font-semibold">Excellence</p>
-                <span class="text-xs">→</span>
-            </div>
-    
-            <!-- Client Focus -->
-            <div class="w-1/4 py-2 px-2 flex flex-col items-center justify-center text-white">
-                <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
-                    💼
-                </div>
-                <p class="mt-1 text-base font-semibold">Client Focus</p>
-                <span class="text-xs">→</span>
-            </div>
-    
-            <!-- Accountability -->
-            <div class="w-1/4 py-2 px-2 flex flex-col items-center justify-center text-white">
-                <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
-                    ✅
-                </div>
-                <p class="mt-1 text-base font-semibold">Accountability</p>
-                <span class="text-xs">→</span>
-            </div>
-    
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
         </div>
-    
+        <!-- time running -->
+        <div class="time"></div>
     </div>
-      
-    
+
+
+<!------------------end image slider------------------>
+
     <!------------------About Us content --------------->
     <div class="w-full bg-white py-16 px-5 md:px-20">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
@@ -224,55 +312,92 @@
 
     <!---------------services content-------------->
 
-    <div class="pt-10 bg-white">
-        <!-- Services Heading -->
-        <h4 class="text-3xl font-bold text-purple-900 text-center md:text-left px-6 md:px-10">
-            Services
-        </h4>
+    <div class=" bg-white relative overflow-hidden">
+  <!-- Services Heading -->
+  <h4 class="text-3xl font-bold text-purple-900 text-center md:text-left px-6 md:px-10">
+    Services
+  </h4>
+
+  <!-- Slider Wrapper -->
+  <div id="services-slider" class="w-full pt-10 flex flex-col items-center md:items-start px-6 md:px-8 relative overflow-hidden">
     
-        <div class="w-full flex pt-6 flex-col items-center md:items-start px-6 md:px-10">
-            <!-- Box Container -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-                <!-- Box 1 -->
-                <div class="bg-[#4F2D7F] text-white px-6 py-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold">Government Compliance</h3>
-                    <p class="text-justify text-base mt-2">
-                        Expert guidance on managing compliance and regulatory issues for local government sectors and public organizations.
-                    </p>
-                </div>
-    
-                <!-- Box 2 -->
-                <div class="bg-[#4F2D7F] text-white px-6 py-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold">Taxation</h3>
-                    <p class="text-justify text-base mt-2">
-                        Support in meeting tax obligations, ensuring timely and compliant submissions.
-                    </p>
-                </div>
-    
-                <!-- Box 3 -->
-                <div class="bg-[#4F2D7F] text-white px-6 py-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold">Bookkeeping</h3>
-                    <p class="text-justify text-base mt-2">
-                        Accurate and reliable outsourced accounting and bookkeeping services tailored to the needs of different industries.
-                    </p>
-                </div>
-    
-                <!-- Box 4 -->
-                <div class="bg-[#4F2D7F] text-white px-6 py-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold">Accounting And Auditing</h3>
-                    <p class="text-justify text-base mt-2">
-                        Complete accounting and auditing services, including financial reporting, internal controls, and compliance with local and international standards.
-                    </p>
-                </div>
-            </div>
-    
-            <!-- Pagination Dots -->
-            <div class="flex space-x-3 mt-8 pb-10 justify-center w-full">
-                <a href="page1.html" class="w-4 h-4 rounded-full bg-blue-600"></a>
-                <a href="page2.html" class="w-4 h-4 rounded-full bg-gray-400 hover:bg-blue-600"></a>
-            </div>
+    <!-- Slide Container -->
+    <div id="slides" class="flex  transition-transform duration-500 ease-in-out w-full"
+      style="transform: translateX(0%);">
+
+      <!-- Section 1 -->
+      <div class="grid grid-cols-1 pl-10 pr-10 sm:grid-cols-2 gap-8 w-full flex-shrink-0">
+        <!-- Box 1 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Government Compliance</h3>
+          <p class="text-justify text-base mt-4">
+            Expert guidance on managing compliance and regulatory issues for local government sectors and public organizations.
+          </p>
         </div>
+        <!-- Box 2 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Taxation</h3>
+          <p class="text-justify text-base mt-4">
+            Support in meeting tax obligations, ensuring timely and compliant submissions.
+          </p>
+        </div>
+        <!-- Box 3 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Bookkeeping</h3>
+          <p class="text-justify text-base mt-4">
+            Accurate and reliable outsourced accounting and bookkeeping services tailored to the needs of different industries.
+          </p>
+        </div>
+        <!-- Box 4 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Accounting And Auditing</h3>
+          <p class="text-justify text-base mt-4">
+            Complete accounting and auditing services, including financial reporting, internal controls, and compliance with local and international standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="grid grid-cols-1 pl-10 pr-10 sm:grid-cols-2 gap-8 w-full flex-shrink-0 ">
+        <!-- Box 5 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Business</h3>
+          <p class="text-justify text-base mt-4">
+          Assistance with securing permits and licenses, enabling new business owners to focus on their core operations.
+          </p>
+        </div>
+        <!-- Box 6 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Due Dilligence</h3>
+          <p class="text-justify text-base mt-4">
+          Performing meticulous due diligence investigations, particularly in mergers, acquisitions, and other significant business transactions, ensuring clients are well-informed and protected against potential risks.
+          </p>
+        </div>
+        <!-- Box 7 -->
+        <div class="bg-[#4F2D7F] text-white px-8 py-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold">Management and Advisory Services</h3>
+          <p class="text-justify text-base mt-4">
+          Strategic consulting to enhance operational efficiency and financial performance.
+          </p>
+        </div>
+     
+      </div>
+
     </div>
+
+    <!-- Pagination Dots -->
+    <div class="flex space-x-3 mt-10 pb-10 justify-center w-full">
+      <button id="dot1" class="w-4 h-4 rounded-full bg-blue-600"></button>
+      <button id="dot2" class="w-4 h-4 rounded-full bg-gray-400 hover:bg-blue-600"></button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
     
     
     <?php include 'footer.php'; ?>
@@ -290,34 +415,28 @@
     
 
 
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
+<script>
+  // Services Slider (dots navigation)
+  const servicesSlider = document.getElementById('slides');
+  const dot1 = document.getElementById('dot1');
+  const dot2 = document.getElementById('dot2');
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.opacity = i === index ? "1" : "0";
-            });
-        }
+  dot1.addEventListener('click', () => {
+    servicesSlider.style.transform = 'translateX(0%)';
+    dot1.classList.add('bg-blue-600');
+    dot1.classList.remove('bg-gray-400');
+    dot2.classList.add('bg-gray-400');
+    dot2.classList.remove('bg-blue-600');
+  });
 
-        function nextSlide() {
-            slideIndex = (slideIndex + 1) % slides.length;
-            showSlide(slideIndex);
-        }
-
-        function prevSlide() {
-            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-            showSlide(slideIndex);
-        }
-
-        function autoSlide() {
-            nextSlide();
-            setTimeout(autoSlide, 5000); // Change image every 5 seconds
-        }
-
-        showSlide(slideIndex);
-        setTimeout(autoSlide, 5000);
-    </script>
-
+  dot2.addEventListener('click', () => {
+    servicesSlider.style.transform = 'translateX(-100%)';
+    dot2.classList.add('bg-blue-600');
+    dot2.classList.remove('bg-gray-400');
+    dot1.classList.add('bg-gray-400');
+    dot1.classList.remove('bg-blue-600');
+  });
+</script>
+<script src="app.js"></script>
 </body>
 </html>
